@@ -6,6 +6,10 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+ul{
+    list-style-type: none;
+}
+
 .clear-fix {
     clear: both;
 }
