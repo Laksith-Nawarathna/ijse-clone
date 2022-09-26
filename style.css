@@ -1,0 +1,150 @@
+@import url(css/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+h4 {
+    /* root font size */
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+h5 {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+
+h6 {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+}
+
+
+/* Layout */
+
+:root {
+    --header-height: 50px;
+    --nav-width: 150px;
+    --layout-border-color: lightgray;
+}
+
+#header {
+    background-color: rgba(238, 238, 238, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    border-bottom: 1px solid var(--layout-border-color);
+}
+
+#nav {
+    background-color: white;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    bottom: 0;
+    width: var(--nav-width);
+    border-right: 1px solid var(--layout-border-color);
+}
+
+#main {
+    margin-top: var(--header-height);
+    margin-left: var(--nav-width);
+}
+
+#footer{
+    text-align: center;
+    padding: 10px 15px 10px;
+    border-top: 1px solid var(--layout-border-color);
+}
+
+#logo{
+    padding-left: 10px;
+}
+
+#smi-container{
+    float: right;
+    padding-right: 10px;
+    height: var(--header-height);
+}
+
+#smi-container .smi-icons{
+    float: left;
+    width: 40px;
+    height: 100%;
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: background-color 0.6s, width 0.8s;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#smi-container .smi-icons ion-icon{
+    font-size: 1.3rem;
+    color: #666;
+    padding-left: 10px; 
+    padding-right: 3px;
+    vertical-align: sub;
+}
+
+#smi-container .smi-icons:hover{
+    color: white;
+    width: 140px;
+
+}
+
+#smi-container .smi-icons:hover ion-icon{
+    color: white;
+}
+
+#smi-container .smi-icons:nth-child(1):hover{
+    background-color: #3b5998;
+}
+#smi-container .smi-icons:nth-child(2):hover{
+    background-color: #0e76a8;
+}
+#smi-container .smi-icons:nth-child(3):hover{
+    background-color: #00acee;
+}
+#smi-container .smi-icons:nth-child(4):hover{
+    background-color: #3f729b;
+}
+#smi-container .smi-icons:nth-child(5):hover{
+    background-color: #c4302b;
+}
+#smi-container .smi-icons:nth-child(6):hover{
+    background-color: #444;
+}
+#smi-container .smi-icons:nth-child(7):hover{
+    background-color: #6567a5;
+}
+
+#smi-container .smi-icons:not(.smi-icons:nth-child(7)){
+    border-right:1px solid var(--layout-border-color);
+}
